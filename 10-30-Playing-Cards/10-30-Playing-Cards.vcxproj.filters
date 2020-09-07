@@ -39,21 +39,6 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="FileView.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ClassView.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="OutputWnd.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="PropertiesWnd.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10-30-Playing-Cards.cpp">
@@ -71,21 +56,6 @@
     <ClCompile Include="10-30-Playing-CardsView.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="FileView.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ClassView.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ViewTree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="OutputWnd.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="PropertiesWnd.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="10-30-Playing-Cards.rc">
@@ -93,69 +63,11 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\file_view.ico">
+    <None Include="res\My1030PlayingCards.rc2">
       <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\file_view_hc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\class_view.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\class_view_hc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\fileview.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\fileview_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\classview.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\classview_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\explorer.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\explorer_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\sort.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\sort_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\menuimages.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\menuimages_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\output_wnd.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\output_wnd_hc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\properties_wnd.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\properties_wnd_hc.ico">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\properties.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="res\properties_hc.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="UserImages.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <Image Include="res\10-30-Playing-CardsDoc.ico">
       <Filter>资源文件</Filter>
     </Image>
@@ -165,13 +77,5 @@
     <Image Include="res\Toolbar.bmp">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="res\Toolbar256.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="res\My1030PlayingCards.rc2">
-      <Filter>资源文件</Filter>
-    </None>
   </ItemGroup>
 </Project>
