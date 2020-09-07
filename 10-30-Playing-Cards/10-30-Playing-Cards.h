@@ -14,7 +14,7 @@
 // 有关此类的实现，请参阅 10-30-Playing-Cards.cpp
 //
 
-class CMy1030PlayingCardsApp : public CWinAppEx
+class CMy1030PlayingCardsApp : public CWinApp
 {
 public:
 	CMy1030PlayingCardsApp();
@@ -26,13 +26,6 @@ public:
 	virtual int ExitInstance();
 
 // 实现
-	UINT  m_nAppLook;
-	BOOL  m_bHiColorIcons;
-
-	virtual void PreLoadState();
-	virtual void LoadCustomState();
-	virtual void SaveCustomState();
-
 	afx_msg void OnAppAbout();
 	DECLARE_MESSAGE_MAP()
 };

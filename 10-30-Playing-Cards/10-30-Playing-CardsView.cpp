@@ -25,9 +25,7 @@ BEGIN_MESSAGE_MAP(CMy1030PlayingCardsView, CView)
 	// 标准打印命令
 	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
-	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CMy1030PlayingCardsView::OnFilePrintPreview)
-	ON_WM_CONTEXTMENU()
-	ON_WM_RBUTTONUP()
+	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CView::OnFilePrintPreview)
 END_MESSAGE_MAP()
 
 // CMy1030PlayingCardsView 构造/析构
@@ -65,14 +63,6 @@ void CMy1030PlayingCardsView::OnDraw(CDC* /*pDC*/)
 
 // CMy1030PlayingCardsView 打印
 
-
-void CMy1030PlayingCardsView::OnFilePrintPreview()
-{
-#ifndef SHARED_HANDLERS
-	AFXPrintPreview(this);
-#endif
-}
-
 BOOL CMy1030PlayingCardsView::OnPreparePrinting(CPrintInfo* pInfo)
 {
 	// 默认准备
@@ -87,19 +77,6 @@ void CMy1030PlayingCardsView::OnBeginPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*
 void CMy1030PlayingCardsView::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
 {
 	// TODO: 添加打印后进行的清理过程
-}
-
-void CMy1030PlayingCardsView::OnRButtonUp(UINT /* nFlags */, CPoint point)
-{
-	ClientToScreen(&point);
-	OnContextMenu(this, point);
-}
-
-void CMy1030PlayingCardsView::OnContextMenu(CWnd* /* pWnd */, CPoint point)
-{
-#ifndef SHARED_HANDLERS
-	theApp.GetContextMenuManager()->ShowPopupMenu(IDR_POPUP_EDIT, point.x, point.y, this, TRUE);
-#endif
 }
 
 
