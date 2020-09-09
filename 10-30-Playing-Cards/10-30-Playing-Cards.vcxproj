@@ -193,21 +193,25 @@
     <ClInclude Include="10-30-Playing-CardsDoc.h" />
     <ClInclude Include="10-30-Playing-CardsView.h" />
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Pokers.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestDlg.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10-30-Playing-Cards.cpp" />
     <ClCompile Include="10-30-Playing-CardsDoc.cpp" />
     <ClCompile Include="10-30-Playing-CardsView.cpp" />
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Pokers.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="TestDlg.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="10-30-Playing-Cards.rc" />
@@ -218,9 +222,16 @@
   <ItemGroup>
     <Image Include="res\10-30-Playing-Cards.ico" />
     <Image Include="res\10-30-Playing-CardsDoc.ico" />
+    <Image Include="res\Pokerlist.bmp" />
+    <Image Include="res\Pokerlist256.bmp" />
     <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="10-30-Playing-Cards.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

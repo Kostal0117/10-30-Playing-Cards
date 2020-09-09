@@ -39,6 +39,12 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Pokers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10-30-Playing-Cards.cpp">
@@ -54,6 +60,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="10-30-Playing-CardsView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokers.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -75,6 +87,12 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokerlist.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokerlist256.bmp">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

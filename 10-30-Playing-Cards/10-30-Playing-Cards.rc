@@ -81,6 +81,10 @@ IDR_My1030PlayingCaTYPE ICON                    "res\\10-30-Playing-CardsDoc.ico
 
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
 
+IDB_BITMAPPOK           BITMAP                  "res\\Pokerlist.bmp"
+
+IDB_BITMAPPOK256        BITMAP                  "res\\Pokerlist256.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -120,13 +124,17 @@ BEGIN
         MENUITEM "打印预览(&V)",                    ID_FILE_PRINT_PREVIEW
         MENUITEM "打印设置(&R)...",                 ID_FILE_PRINT_SETUP
         MENUITEM SEPARATOR
-        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
         MENUITEM SEPARATOR
         MENUITEM "退出(&X)",                      ID_APP_EXIT
     END
     POPUP "关于"
     BEGIN
         MENUITEM "关于 10-30-Playing-Cards(&A)...", ID_APP_ABOUT
+    END
+    POPUP "测试"
+    BEGIN
+        MENUITEM "Poker类测试",                    ID_POKERTEST
     END
 END
 
@@ -171,6 +179,20 @@ BEGIN
     DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
 END
 
+IDD_TEST DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_SUITCOMBO,211,22,74,41,CBS_DROPDOWN | WS_VSCROLL | WS_GROUP | WS_TABSTOP,WS_EX_STATICEDGE
+    COMBOBOX        IDC_FEATURECOMBO,210,78,75,46,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "花色",IDC_STATIC,183,24,18,16
+    LTEXT           "点数",IDC_STATIC,183,80,19,14
+    PUSHBUTTON      "显示",IDC_BUTTON1,220,122,55,23
+    CONTROL         "",ID_POKERPIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,24,20,15,13
+    LTEXT           "Static",IDC_PIC,27,47,118,92
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -194,13 +216,13 @@ BEGIN
     BEGIN
         BLOCK "080404b0"
         BEGIN
-            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "CompanyName", "TODO: <SEU Developers>"
             VALUE "FileDescription", "10-30-Playing-Cards"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "10-30-Playing-Cards.exe"
-            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "LegalCopyright", "TODO:  (C) <SEU Developers>。  保留所有权利。"
             VALUE "OriginalFilename", "10-30-Playing-Cards.exe"
-            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductName", "TODO: <10:30 Playing Cards>"
             VALUE "ProductVersion", "1.0.0.1"
         END
     END
@@ -226,8 +248,27 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 55
     END
+
+    IDD_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
 END
 #endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_TEST AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
 
 
 /////////////////////////////////////////////////////////////////////////////
