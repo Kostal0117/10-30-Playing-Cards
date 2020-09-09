@@ -2,9 +2,12 @@
 #include "stdafx.h"
 #include "Pokers.h"
 #include "resource.h"
+
+/*
 #include "TestDlg.h"
 
 
+这种实现方式太复杂了，我们已经不需要了
 void Pokers::SaveBitmap(CString strFilePath)
 {
 	IniBitmap();
@@ -57,7 +60,7 @@ bool Pokers::IniBitmap()
 	cbmp.DeleteObject();
 	return cbmp.LoadBitmap(IDB_BITMAPPOK256);
 }
-
+*/
 Pokers::Pokers(int Feature, Poker_Suit Suit)
 {
 	this->Feature = Feature;
@@ -74,7 +77,7 @@ Pokers::Pokers(Pokers & p)
 	ID = p.ID;
 	Feature = p.Feature;
 	Suit = p.Suit;
-	BitmapCopy(&p.cbmp);
+	//BitmapCopy(&p.cbmp);
 }
 
 int Pokers::GetID()
@@ -118,7 +121,7 @@ void Pokers::SetID(int ID)
 
 void Pokers::SetFeature(int Feature)
 {
-	ID += Feature - this->Feature;
+	ID += this->Feature-Feature;
 	this->Feature = Feature;
 }
 
@@ -146,7 +149,7 @@ void Pokers::SetSuit(Poker_Suit Suit)
 
 void Pokers::SetPoker(int Feature, Poker_Suit Suit)
 {
-	ID += Feature - this->Feature;
+	Feature - this->Feature;
 	switch (Suit) {
 	case Spade: {
 		ID = POKERS_SPADE(Feature);
@@ -169,7 +172,9 @@ void Pokers::SetPoker(int Feature, Poker_Suit Suit)
 
 CBitmap * Pokers::Getbitmap()
 {
-	IniBitmap();
-	CutBitmap();
+	//IniBitmap();
+	//CutBitmap();
+	cbmp.DeleteObject();
+	cbmp.LoadBitmapW(POKERS_IDH(ID));
 	return &cbmp;
 }

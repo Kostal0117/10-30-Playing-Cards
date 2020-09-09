@@ -81,8 +81,6 @@ BOOL CTestDlg::OnInitDialog()
 	CDialogEx::OnInitDialog();
 
 	// TODO:  在此添加额外的初始化
-	m_Poker.IniHwnd(&this->m_hWnd);
-	
 	m_Scomb.InsertString(0,_T("黑桃"));
 	m_Scomb.InsertString(1,_T("红心"));
 	m_Scomb.InsertString(2,_T("方块"));
@@ -103,10 +101,9 @@ BOOL CTestDlg::OnInitDialog()
 	m_Suit = _T("黑桃");
 	m_Feature = _T("A");
 
-	m_Pokerpic.ModifyStyle(0xf,SS_BITMAP|SS_CENTERIMAGE);
-	m_PIC.ModifyStyle(0xf, SS_BITMAP | SS_CENTERIMAGE);
+	m_PIC.ModifyStyle(SS_ENHMETAFILE, SS_BITMAP | SS_CENTERIMAGE);
+	
 	m_PIC.SetBitmap((HBITMAP)(*m_Poker.Getbitmap()));
-	Invalidate();
 	
 	return TRUE;  // return TRUE unless you set the focus to a control
 				  // 异常: OCX 属性页应返回 FALSE
@@ -132,8 +129,6 @@ void CTestDlg::OnClickedButton1()
 	else { F = _ttoi(m_Feature); }
 	m_Poker.SetPoker(F,s);
 
-	m_Poker.SaveBitmap(_T("Test5.bmp"));
 	m_PIC.SetBitmap((HBITMAP)(*m_Poker.Getbitmap()));
-	Invalidate();
 	UpdateData(FALSE);
 }

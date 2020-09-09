@@ -95,5 +95,164 @@
     <Image Include="res\Pokerlist256.bmp">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\aa.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ab.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ac.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ad.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ae.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\af.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ag.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ah.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ai.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\aj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ak.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\al.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\am.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ba.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bb.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bd.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\be.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bf.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bg.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bh.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bi.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bk.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bl.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\bm.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ca.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\cb.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\cc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\cd.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ce.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\cf.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\cg.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ch.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ci.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\cj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\ck.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\cl.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\cm.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\da.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\db.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\dc.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\dd.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\de.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\df.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\dg.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\dh.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\di.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\dj.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\dk.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\dl.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Pokers\dm.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>
