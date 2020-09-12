@@ -40,6 +40,7 @@ protected:
 
 public:
 	afx_msg void OnPokertest();
+	afx_msg void OnSoundtest();
 };
 
 

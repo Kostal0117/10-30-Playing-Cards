@@ -149,7 +149,7 @@ void Pokers::SetSuit(Poker_Suit Suit)
 
 void Pokers::SetPoker(int Feature, Poker_Suit Suit)
 {
-	Feature - this->Feature;
+	this->Feature=Feature;
 	switch (Suit) {
 	case Spade: {
 		ID = POKERS_SPADE(Feature);

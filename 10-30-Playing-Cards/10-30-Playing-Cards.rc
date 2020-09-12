@@ -239,6 +239,7 @@ BEGIN
     POPUP "≤‚ ‘"
     BEGIN
         MENUITEM "Poker¿‡≤‚ ‘",                    ID_POKERTEST
+        MENUITEM "Sound≤‚ ‘",                     ID_SOUNDTEST
     END
 END
 
@@ -295,6 +296,17 @@ BEGIN
     PUSHBUTTON      "œ‘ æ",IDC_BUTTON1,220,122,55,23
     CONTROL         "",ID_POKERPIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,24,20,15,13
     LTEXT           "Static",IDC_PIC,27,47,118,92
+END
+
+IDD_SOUNDTEST DIALOGEX 0, 0, 255, 112
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sound Test"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Stop",IDC_STOP,94,60,62,28
+    PUSHBUTTON      "Play",IDC_PLAY,17,60,62,29
+    PUSHBUTTON      "Pause",IDC_PAUSE,174,60,62,29
+    PUSHBUTTON      "Load",IDC_BUTTON1,187,24,31,14
 END
 
 
@@ -360,6 +372,14 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 169
     END
+
+    IDD_SOUNDTEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -373,6 +393,25 @@ IDD_TEST AFX_DIALOG_LAYOUT
 BEGIN
     0
 END
+
+IDD_SOUNDTEST AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE1               WAVE                    "res\\Sound\\Test\\915.wav"
+
+IDR_WAVE2               WAVE                    "res\\Sound\\Test\\FirstPart.wav"
+
+IDR_WAVE3               WAVE                    "res\\Sound\\Test\\Intro.wav"
+
+IDR_WAVE4               WAVE                    "res\\Sound\\Test\\Test.wav"
 
 
 /////////////////////////////////////////////////////////////////////////////
