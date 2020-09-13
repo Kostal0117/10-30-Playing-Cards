@@ -1,8 +1,5 @@
 #pragma once
 
-#ifndef _TH_POKERS
-#define _TH_POKERS
-
 #include "stdafx.h"
 #include "resource.h"
 
@@ -120,5 +117,3 @@ public:
 	void IniHwnd(const HWND* hwnd);
 	*/
 };
-
-#endif //_TH_POKERS

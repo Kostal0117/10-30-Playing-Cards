@@ -6,6 +6,7 @@
 #include "10-30-Playing-Cards.h"
 #include "TestDlg.h"
 #include "MainFrm.h"
+#include "SoundTest.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -18,6 +19,7 @@ IMPLEMENT_DYNCREATE(CMainFrame, CFrameWnd)
 BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_WM_CREATE()
 	ON_COMMAND(ID_POKERTEST, &CMainFrame::OnPokertest)
+	ON_COMMAND(ID_SOUNDTEST, &CMainFrame::OnSoundtest)
 END_MESSAGE_MAP()
 
 static UINT indicators[] =
@@ -102,5 +104,13 @@ void CMainFrame::OnPokertest()
 {
 	// TODO: 在此添加命令处理程序代码
 	CTestDlg dlg;
+	dlg.DoModal();
+}
+
+
+void CMainFrame::OnSoundtest()
+{
+	// TODO: 在此添加命令处理程序代码
+	CSoundTest dlg;
 	dlg.DoModal();
 }

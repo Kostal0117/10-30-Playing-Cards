@@ -45,6 +45,12 @@
     <ClInclude Include="TestDlg.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Sound_Player.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="10-30-Playing-Cards.cpp">
@@ -66,6 +72,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TestDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound_Player.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -254,5 +266,19 @@
     <Image Include="res\Pokers\dm.bmp">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\Sound\Test\915.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="res\Sound\Test\FirstPart.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="res\Sound\Test\Intro.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="res\Sound\Test\Test.wav">
+      <Filter>资源文件</Filter>
+    </Media>
   </ItemGroup>
 </Project>
