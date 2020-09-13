@@ -2,8 +2,8 @@
 //
 
 #include "stdafx.h"
-#include "10-30-Playing-Cards.h"
 #include "SoundTest.h"
+#include "10-30-Playing-Cards.h"
 #include "afxdialogex.h"
 
 // CSoundTest 对话框
@@ -60,7 +60,7 @@ void CSoundTest::OnBnClickedPlay()
 void CSoundTest::OnBnClickedStop()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	m_Player.Stop();
+//	m_Player.Stop();
 }
 
 
@@ -80,6 +80,6 @@ void CSoundTest::OnBnClickedButton1()
 	//如果已正常打开
 	if (IDOK == fileDlg.DoModal())
 	{
-		m_Player.SetCD(fileDlg.GetPathName());
+		m_Player.SetCD(fileDlg.GetPathName().GetBuffer(),_T("wave"));
 	}
 }
